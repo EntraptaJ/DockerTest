@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd smartthings-cast
+cd smartthings-xbox
 npm install
 
 # Start CastWebAPI
