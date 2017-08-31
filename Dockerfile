@@ -12,7 +12,7 @@ RUN apt-get update; \
     apt-get install -y curl wget; \
     apt-get install -y libnss-mdns avahi-discover libavahi-compat-libdnssd-dev libkrb5-dev
 
-WORKDIR /castwebapi
+WORKDIR /xboxon
 
 #RUN npm install castv2; \
  #   npm install castv2-client; \
@@ -25,11 +25,10 @@ WORKDIR /castwebapi
 # Get latest script from Git
 # -------------------------------------------------------------------------
 
-#RUN git clone https://github.com/vervallsweg/cast-web-api.git
-RUN git clone https://github.com/germasch/smartthings-cast.git
+RUN git clone https://github.com/jacobrossi/smartthings-xbox.git
 
 ADD image/run.sh /root/run.sh
 
 # Run container
-EXPOSE 8080
+EXPOSE 5859
 CMD ["/root/run.sh"]
