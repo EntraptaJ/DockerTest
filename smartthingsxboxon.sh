@@ -4,8 +4,8 @@ BASEDIR=$(dirname $0)
 cd $BASEDIR
 
 VERSION=$(<VERSION)
-IMAGE_NAME="PunditSharp/smartthingscast"
-CONTAINER_NAME=SmartThingsCast
+IMAGE_NAME="KristianFJones/smartthingsxboxon"
+CONTAINER_NAME=SmartThingsXboxOn
 
 ACTION=$1
 
