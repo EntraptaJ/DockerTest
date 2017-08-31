@@ -30,5 +30,5 @@ RUN git clone https://github.com/jacobrossi/smartthings-xbox.git
 ADD image/run.sh /root/run.sh
 
 # Run container
-EXPOSE 5859
+EXPOSE 80
 CMD ["/root/run.sh"]
