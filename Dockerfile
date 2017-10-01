@@ -25,10 +25,10 @@ WORKDIR /xboxon
 # Get latest script from Git
 # -------------------------------------------------------------------------
 
-RUN git clone https://github.com/jacobrossi/smartthings-xbox.git
+RUN git clone https://github.com/vervallsweg/cast-web-api.git
 
 ADD image/run.sh /root/run.sh
 
 # Run container
-EXPOSE 80
+EXPOSE 3000
 CMD ["/root/run.sh"]
